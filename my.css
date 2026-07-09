@@ -222,6 +222,41 @@ footer {
     padding-top: 55px;
 }
 
+.card-cover {
+    background-size: cover;
+    background-position: center;
+    transition: .3s;
+}
+
+.card-cover:hover {
+    transform: translateY(-8px);
+}
+
+.card-cover p {
+    font-size: .95rem;
+}
+
+.badge {
+    margin-right: 6px;
+}
+
+.card-cover {
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.card-cover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, .35) !important;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
 /* ===========================
    MOBILE RESPONSIVENESS
    =========================== */
@@ -292,8 +327,8 @@ footer {
     }
 
     .scroll-indicator p {
-        font-size: 0.5rem;
-        letter-spacing: 3px;
+        font-size: 0.7rem;
+        letter-spacing: 4px;
     }
 
     /* ---------- QUALIFICATION SECTION ---------- */
@@ -309,7 +344,7 @@ footer {
     #resume .col-12 {
         display: flex;
         justify-content: center;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
     }
 
     /* Cards */
@@ -356,4 +391,10 @@ footer {
         margin: auto;
     }
 
+}
+
+@media (max-width:576px) {
+    .card-cover .btn {
+        flex: 1;
+    }
 }
