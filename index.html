@@ -240,8 +240,16 @@
                         <span class="badge bg-success">Bootstrap</span>
                       </div>
                       <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
-                        <a href="#" class="btn btn-outline-light btn-sm"
+                        <a
+                          href="https://eshalibrar.github.io/portfolio/"
+                          target="_blank"
+                          class="btn btn-primary btn-sm"
+                          >Live Demo</a
+                        >
+                        <a
+                          href="https://github.com/EshalIbrar/portfolio"
+                          target="_blank"
+                          class="btn btn-outline-light btn-sm"
                           >GitHub</a
                         >
                       </div>
@@ -283,8 +291,16 @@
                         >
                       </div>
                       <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
-                        <a href="#" class="btn btn-outline-light btn-sm"
+                        <a
+                          href="https://eshalibrar.github.io/Tindog/"
+                          target="_blank"
+                          class="btn btn-primary btn-sm"
+                          >Live Demo</a
+                        >
+                        <a
+                          href="https://github.com/EshalIbrar/Tindog"
+                          target="_blank"
+                          class="btn btn-outline-light btn-sm"
                           >GitHub</a
                         >
                       </div>
@@ -322,8 +338,16 @@
                         <span class="badge bg-info">CSS Grid</span>
                       </div>
                       <div class="d-flex gap-2 mt-auto">
-                        <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
-                        <a href="#" class="btn btn-outline-light btn-sm"
+                        <a
+                          href="https://eshalibrar.github.io/Mondrian/"
+                          target="_blank"
+                          class="btn btn-primary btn-sm"
+                          >Live Demo</a
+                        >
+                        <a
+                          href="https://github.com/EshalIbrar/Mondrian"
+                          target="_blank"
+                          class="btn btn-outline-light btn-sm"
                           >GitHub</a
                         >
                       </div>
@@ -338,14 +362,53 @@
 
       <!-- About Me Section -->
       <section id="about" class="py-5">
-        <div class="container px-4 py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">About Me</h2>
+
           <div class="row align-items-center g-5">
-            <div class="col-md-5">
-              <!-- About Image -->
+            <!-- Left Side -->
+            <div class="col-lg-5 text-center">
+              <img
+                src="./images/meeee-removebg-preview.png"
+                class="img-fluid rounded-circle shadow-lg about-img"
+                width="320"
+                alt="Eshal Ibrar"
+              />
             </div>
 
-            <div class="col-md-7">
-              <!-- About Text -->
+            <!-- Right Side -->
+            <div class="col-lg-7">
+              <h3 class="fw-bold mb-3">
+                Hi, I'm <span class="text-primary">Eshal Ibrar</span>
+              </h3>
+
+              <p class="lead">
+                I'm an aspiring Full-Stack Web Developer and Python Developer
+                passionate about building responsive, modern and user-friendly
+                websites.
+              </p>
+
+              <p>
+                I enjoy solving problems, learning new technologies and creating
+                real-world projects. My goal is to become a professional
+                software engineer and build impactful digital products.
+              </p>
+
+              <div class="mb-4">
+                <span class="badge bg-primary me-2 mb-2">HTML</span>
+
+                <span class="badge bg-info me-2 mb-2">CSS</span>
+
+                <span class="badge bg-success me-2 mb-2">Bootstrap</span>
+
+                <span class="badge bg-warning text-dark me-2 mb-2">Python</span>
+
+                <span class="badge bg-dark me-2 mb-2">GitHub</span>
+              </div>
+
+              <a href="resume.html" class="btn btn-primary btn-lg">
+                View Resume
+              </a>
             </div>
           </div>
         </div>
@@ -353,12 +416,92 @@
 
       <!-- Contact Section -->
       <section id="contact" class="py-5">
-        <div class="container px-4 py-5">
-          <h2 class="text-center mb-5">Contact Me</h2>
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2>Contact Me</h2>
 
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <!-- Contact Form -->
+            <p class="text-muted">
+              Have a project or opportunity? I'd love to hear from you!
+            </p>
+          </div>
+
+          <div class="row g-5">
+            <!-- Contact Information -->
+
+            <div class="col-lg-5">
+              <div class="contact-card mb-4">
+                <i class="bi bi-envelope-fill"></i>
+
+                <div>
+                  <h5>Gmail</h5>
+                  <p class="mb-0">eshalibrar2004@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-card mb-4">
+                <i class="bi bi-telephone-fill"></i>
+
+                <div>
+                  <h5>Phone</h5>
+                  <p class="mb-0">+92 336 5809980</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <i class="bi bi-geo-alt-fill"></i>
+
+                <div>
+                  <h5>Location</h5>
+                  <p class="mb-0">Peshawar, Pakistan</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+
+            <div class="col-lg-7">
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/xpqggvvr"
+                method="POST"
+              >
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control mb-3"
+                  placeholder="Your Name"
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control mb-3"
+                  placeholder="Your Email"
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control mb-3"
+                  placeholder="Subject"
+                />
+
+                <textarea
+                  name="message"
+                  class="form-control mb-3"
+                  rows="6"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    Send Message
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -366,9 +509,48 @@
     </main>
 
     <!-- Footer -->
-    <footer class="py-5 text-light">
-      <div class="container">
-        <!-- Footer Content -->
+    <footer class="py-4 text-white">
+      <div class="container text-center">
+        <h4 class="fw-bold mb-2">Eshal Ibrar</h4>
+
+        <p class="footer-text mb-4">
+          Front-End Web Developer | Python Developer
+        </p>
+
+        <!-- Navigation -->
+        <div class="mb-4">
+          <a href="#hero" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="mb-4">
+          <a
+            href="https://github.com/EshalIbrar"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/eshal-ibrar-b1b8b4312?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+          <a href="mailto:eshalibrar2004@gmail.com" class="social-icon">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+
+        <hr class="footer-line" />
+
+        <small> © 2026 Eshal Ibrar. All Rights Reserved. </small>
       </div>
     </footer>
   </body>
